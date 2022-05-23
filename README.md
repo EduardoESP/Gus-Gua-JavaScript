@@ -29,3 +29,12 @@ utiliza crase e place holder
  **Exemplo:**
 `O aluno ${nome} com ${idade} anos`
 onde nome e idade são variaveis que recebem valores
+
+###Formatando número
+**Ex: var n1 = 2222.22**
+n1.toFixed(2) Fixa duas casas decimais
+**2222.22**
+n1.toFixed(2).replace('.','.') Troca ponto por virgula
+**2222,22**
+n1.toLocaleString('pt-BR', {style: 'currency', currecy:'BRL'}) CONVERTE O NUMERO PARA DINHEIRO
+**R$ 2222,22**
