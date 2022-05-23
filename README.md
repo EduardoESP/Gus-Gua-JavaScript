@@ -30,7 +30,7 @@ utiliza crase e place holder
 `O aluno ${nome} com ${idade} anos`
 onde nome e idade são variaveis que recebem valores
 
-###Formatando número
+### Formatando número
 **Ex: var n1 = 2222.22**
 n1.toFixed(2) Fixa duas casas decimais
 **2222.22**
