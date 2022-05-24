@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+body{
+    background-color: rgb(141, 134, 235);
+    color: white;
+    font: normal 18pt Arial;
+}
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o  <strong>DOM</strong> em javaScript</p>
+    <div class="msg">clique aqui</div>
+
+
+    <script>
+        var corpo = window.document.body //variavel para acesso do corpo do site 
+        var p1 = window.document.getElementsByTagName('p')[0] //atribuindo o valor na varialve pelo n ome da Tag
+      // var d = window.document.getElementById('msg') // atribuindo o valor da div por id na variavel
+        //var d = window.document.getElementsByName('msg')[0] // atribuindo o valor da div na variale po nome
+        window.document.write('Está escrito assim no paragrafo 1 '+p1.innerText) // acessa oq ta escrito no primeiro paragrafo
+       // corpo.style.background = 'black';
+       // p1.style.color = 'blue';
+      // d.style.background = 'green' //alterando o fundo da div
+       //d.innerText = 'Estou aguardando...' //alterando o texto da div
+       //d.innerText = 'Olá!'
+
+       // query selector
+
+      // var d1 = window.document.querySelector('div#msg') //acesso por id
+       //d1.innerText = 'Eduardo'
+
+       var d = window.document.querySelector('div.msg') // acesso por classe
+       d.style.background = 'black'
+
+
+
+
+
+    </script>
+</body>
+</html>
