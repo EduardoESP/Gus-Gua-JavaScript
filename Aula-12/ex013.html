@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias da Semana</title>
+</head>
+<body>
+    <h1>Descubra o dia da semana</h1>
+    <div id="resultado"></div>
+    <input type="button" name="dia" id="diadia" value="Click aqui" onclick="esteDia()">
+
+    <script>
+        function esteDia(){
+            var agora = new Date();
+            var diaSema = agora.getDay();
+            var resultado = window.document.getElementById("resultado");
+
+            switch(diaSema){
+                case 0:
+                    resultado.innerHTML = "Domingo"
+                break
+
+                case 1:
+                    resultado.innerHTML = "Segunda"
+                break
+
+                case 2:
+                    resultado.innerHTML = "Terça"
+                break
+
+                case 3:
+                    resultado.innerHTML = "Quarta"
+                break
+
+                case 4:
+                    resultado.innerHTML = "Quinta"
+                break
+
+                case 5:
+                    resultado.innerHTML = "Sexta"
+                break
+
+                case 6:
+                    resultado.innerHTML = "Sabado"
+                break
+
+                default:
+
+                resultado.innerHTML = "[Erro] Dia invalido"
+                break
+
+
+            }
+
+        }
+    </script>
+
+    
+</body>
+</html>
