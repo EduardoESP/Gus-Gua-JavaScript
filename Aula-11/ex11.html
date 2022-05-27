@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    <p>Digite Pais de nascimento</p>
+    <input type="text" id="nac" name="txt" placeholder="Digite aqui">
+    <input type="button" id="enviar" value="Verificar" onclick="nacionalidade()" >
+    <div id="resultado"></div>
+    <script>
+        function nacionalidade(){
+        var nacionalidad = window.document.getElementById("nac");
+        var texto = nacionalidad.value;
+        var res = window.document.querySelector('div#resultado'); 
+       
+        if(texto == "Brasil"){
+            res.innerHTML = "Você é brasileiro"
+        } else if(texto == "") {
+            alert("Digite o o país") 
+            
+        } else   {
+            res.innerHTML = "Você é estrangeiro"
+        }
+    }
+
+    </script>
+</body>
+</html>
