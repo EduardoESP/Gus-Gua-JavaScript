@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHILE</title>
+    <style>
+        body{
+            background-color: rgb(77, 77, 219);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Deseja Contar até quanto?</h1>
+    <input type="number"  id="valor" placeholder="Digite o valor">
+    <input type="button" id="botão" value="CONTAR" onclick="contar()">
+    <!--<div id="contando" ></div>-->
+    <script>
+        function contar(){
+            var valor = document.getElementById("valor");
+            var contando = Number(valor.value);
+           // var resultado = document.getElementById("contando");
+
+            var c = 1;
+            if(contando =="") alert("Digite um numero")
+            while(c <= contando){
+                //resultado.innerHTML = `Contando: ${c}`
+                document.write(`Contando ${c}<br/>`)
+                c++
+            }
+            
+        }
+
+    </script>
+
+</body>
+</html>
