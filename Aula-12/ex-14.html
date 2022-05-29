@@ -16,18 +16,18 @@
     <h1>Deseja Contar até quanto?</h1>
     <input type="number"  id="valor" placeholder="Digite o valor">
     <input type="button" id="botão" value="CONTAR" onclick="contar()">
-    <!--<div id="contando" ></div>-->
+    <div id="contando" ></div>
     <script>
         function contar(){
             var valor = document.getElementById("valor");
             var contando = Number(valor.value);
-           // var resultado = document.getElementById("contando");
-
+            var resultado = document.getElementById("contando");
+            var imprimir = resultado
             var c = 1;
             if(contando =="") alert("Digite um numero")
             while(c <= contando){
-                //resultado.innerHTML = `Contando: ${c}`
-                document.write(`Contando ${c}<br/>`)
+                imprimir.innerHTML += `Contando: ${c}<br/>`
+              //  document.write(`Contando ${c}<br/>`)
                 c++
             }
             

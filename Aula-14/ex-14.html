@@ -17,13 +17,17 @@
     <p>Digitte o número para contarmos até ele:</p>
     <input type="number" id="numero" placeholder="Digite aqui">
     <input type="button" value="contar" onclick="contar()">
+    <div id="resultado"></div>
 
     <script>
         function contar(){
         var numero = document.getElementById("numero");
         var contando = numero.value;
+        var resultado = document.getElementById('resultado')
+        var imprimindo =resultado
         for(var i = 0; i <= contando; i++){
-            document.write(`Contando ${i}<br/>`);
+          //document.write(`Contando ${i}<br/>`);
+            resultado.innerHTML += `Contando ${i}<br/>`
         }
     }
     </script>
