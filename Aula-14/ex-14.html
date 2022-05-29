@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For</title>
+        <style>
+            body{
+                background-color: rgb(86, 86, 223);
+                color: white;
+            }
+        </style>
+</head>
+<body>
+    <h1>Vamos contar?</h1>
+    <p>Digitte o número para contarmos até ele:</p>
+    <input type="number" id="numero" placeholder="Digite aqui">
+    <input type="button" value="contar" onclick="contar()">
+
+    <script>
+        function contar(){
+        var numero = document.getElementById("numero");
+        var contando = numero.value;
+        for(var i = 0; i <= contando; i++){
+            document.write(`Contando ${i}<br/>`);
+        }
+    }
+    </script>
+</body>
+
+</html>
