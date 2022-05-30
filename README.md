@@ -5,6 +5,8 @@ Curso Gustavo Guanabara JavaScript
 
 **Bibliografia** https://developer.mozilla.org/pt-BR/docs/Web/Events
 
+**Site de códigos de emojis** https://apps.timwhitlock.info/emoji/tables/unicode
+
 ## Aula 3 dando os primeiros passos.
 Instalação do node.js e visual studio code. dicas de livros e insentivos.
 
