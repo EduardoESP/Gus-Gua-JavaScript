@@ -1,6 +1,8 @@
 # Gus-Gua-JavaScript
 Curso Gustavo Guanabara JavaScript
 
+**Fotos gratuitas:** https://www.pexels.com/pt-br/
+
 **Bibliografia** https://developer.mozilla.org/pt-BR/docs/Web/Events
 
 ## Aula 3 dando os primeiros passos.
